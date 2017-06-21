@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+     <head>
+         <title>Cities of Lithuania</title>
+         <link rel="stylesheet" type="text/css" href="LT.css" />
+		 <link rel="stylesheet" type="text/css" href="KlaipedaLT.css" />
+         <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	 </head>
+<body>
+<header>
+    <nav class="clearfix">
+	    <a href="LT.html" class="logo">Lietuvos miestai</a>
+		<a href="javascript:void(0)"></a>
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+	</nav>
+</header>
+<div class="klaipeda-div">
+     <h1>Klaipėda</h1>
+	 <p>Didžioji miesto dalis yra ryčiau jūros ir marių. Klaipėdoje yra dvi perkėlos:<br> senoji (miesto centre) ir naujoji (į pietus nuo centro). Išilgai Kuršių marių<br> yra didelis uostas, kurio šiaurinis kraštas siekia Baltijos jūrą, o pietinis<br> baigiasi ties Malkų prieplauka – Kuršių marių įlankėle, esančia ties Kiaulės<br> Nugaros sala; čia yra tarptautinė jūrų perkėla. Klaipėdoje yra unikalus jūrų<br> muziejus ir delfinariumas. Šiauriau Klaipėdos išlikusios natūralios kopos,<br> veda pėsčiųjų ir dviračių takai į Palangą.</p> 
+	          <div id="images">
+		     <ul>
+				 <li><a href="Klaipeda1.jpg" rel="group" class="fancybox"><img src="Klaipeda1.jpg" /></a></li>
+				 <li><a href="Klaipeda2.jpg" rel="group" class="fancybox"><img src="Klaipeda2.jpg" /></a></li>
+				 <li><a href="Klaipeda3.jpg" rel="group" class="fancybox"><img src="Klaipeda3.jpg" /></a></li>
+				 
+			 </ul>
+		 </div>
+</div>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 55.703297, lng: 21.144279};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQJNqlilinpPS5O9vS_dxowj8Ucbqvdpw&callback=initMap">
+    </script>
+
+	<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+	
+</body>
+</html>

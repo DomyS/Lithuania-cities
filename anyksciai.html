@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+     <head>
+         <title>Cities of Lithuania</title>
+         <link rel="stylesheet" type="text/css" href="LT.css" />
+		 <link rel="stylesheet" type="text/css" href="anyksciai.css" />
+         <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	 </head>
+<body>
+<header>
+    <nav class="clearfix">
+	    <a href="index.html" class="logo">Cities of Lithuania</a>
+		<a href="javascript:void(0)"></a>
+	</nav>
+</header>
+<div class="anyksciai-div">
+     <h1>Anykščiai</h1>
+	  <div id="images">
+	     <p> Is a ski resort town in Lithuania, 20 miles (32 kilometres) west of Utena.<br> The Roman Catholic Church of St. Matthias in Anykščiai is the tallest<br> church in Lithuania, with spires measuring 79 metres (259 feet)<br> in height.</p>
+		     <ul>
+				 <li><a href="Anyksciai1.jpg" rel="group" class="fancybox"><img src="Anyksciai1.jpg" /></a></li>
+				 <li><a href="Anyksciai2.jpg" rel="group" class="fancybox"><img src="Anyksciai2.jpg" /></a></li>
+				 <li><a href="Anyksciai3.jpg" rel="group" class="fancybox"><img src="Anyksciai3.jpg" /></a></li>
+				 
+			 </ul>
+		 </div>
+</div>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 55.5291, lng: 25.1132};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQJNqlilinpPS5O9vS_dxowj8Ucbqvdpw&callback=initMap">
+    </script>
+
+	<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+	
+</body>
+</html>

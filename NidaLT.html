@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+     <head>
+         <title>Cities of Lithuania</title>
+         <link rel="stylesheet" type="text/css" href="LT.css" />
+		 <link rel="stylesheet" type="text/css" href="nida.css" />
+         <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		 <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	 </head>
+<body>
+<header>
+    <nav class="clearfix">
+	    <a href="index.html" class="logo">Lietuvos miestai</a>
+		<a href="javascript:void(0)"></a>
+	</nav>
+</header>
+<div class="nida-div">
+     <h1>Nida</h1>
+	 <p>Gyvenvietė Kuršių nerijoje, Neringos miesto pietiniame pakraštyje, šalia<br> krašto kelio  167  Smiltynė–Nida . Administracinis Neringos savivaldybės<br> centras.</p>
+	     <div id="images">
+		     <ul>
+				 <li><a href="nida1.jpg" rel="group" class="fancybox"><img src="nida1.jpg" /></a></li>
+				 <li><a href="nida2.jpg" rel="group" class="fancybox"><img src="nida2.jpg" /></a></li>
+				 <li><a href="nida3.jpg" rel="group" class="fancybox"><img src="nida3.jpg" /></a></li>
+				 
+			 </ul>
+		 </div>
+</div>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 55.3025, lng: 21.0035};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQJNqlilinpPS5O9vS_dxowj8Ucbqvdpw&callback=initMap">
+    </script>
+
+	<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+	
+</body>
+</html>

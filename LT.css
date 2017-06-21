@@ -1,0 +1,591 @@
+body {
+	margin: 0;
+	background-color: #f5f5f5;
+	color: #333;
+	font-weight: 400;
+	letter-spacing: 1.8px;
+	font-family: "Dosis", sans-serif;
+	line-height: 1.4;
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: #f5f5f5;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+.header-bg {
+	position: relative;
+	width: 100%;
+	height: 300%;
+	background-image: url('https://static.pexels.com/photos/152536/pexels-photo-152536.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.moto-wrapper {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 35%;
+	color: #fff;
+	left: 11%;
+}
+
+.moto-wrapper h1 {
+	position: relative;
+	font-size: 70px;
+	font-weight: 600;
+	text-align: center;
+	right: 70px;
+}
+
+header nav {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.logo:link {
+	position: relative;
+	color: #333;
+	font-size: 23px;
+	margin-left: 30px;
+	font-family: "Dosis", sans-serif;
+	margin-top: 30px;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	top: 15px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.logo:visited {
+	color: #333;
+}
+
+.logo:hover {
+	color: #000;
+}
+
+.logo:active {
+	color: #000;
+}
+
+.menu:link {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+ul {
+	position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+	right: 200px;
+	top: 9px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #D4DDED;
+}
+
+.ion-ios-home {
+}
+
+.verticalLine {
+	border-right: 1px solid #ccc;
+}
+
+nav > ul > li:hover {
+  background: #d5d5d5;
+  border-radius: 5px;
+}
+
+#LT-EN {
+	right: 80px;
+}
+
+.vilnius {
+	width: 90%;
+	height: 300px;
+	background-image: url('http://fr.academic.ru/pictures/frwiki/86/Vilnius_-_Panorama_01.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 25px;
+}
+
+.vilnius-city {
+    position: absolute;
+	width: 90%;
+	height: 300px;
+}
+
+.vilnius-city a:link {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	margin-left: 38%;
+}
+
+.vilnius-city a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+    margin-left: auto;
+}
+
+.kaunas {
+	width: 90%;
+	height: 300px;
+	background-image: url('https://cdn.dorms.com/city_images/Lithuania/kaunas.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+}
+
+.kaunas-city {
+	position: absolute;
+	width: 90%;
+	height: 300px;
+	margin-left: -20px;
+}
+
+.kaunas-city a:link {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	margin-left: 38%;
+}
+
+.kaunas-city a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+    margin-left: auto;
+}
+
+.klaipeda {
+	width: 90%;
+	height: 300px;
+	background-image: url('http://lazy-tour.by/wp-content/uploads/2016/04/Klajpeda-1.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+}
+
+.klaipeda-city {
+	position: absolute;
+	width: 90%;
+	height: 300px;
+	margin-left: -40px;
+	margin-right: auto;
+}
+
+.klaipeda-city a:link {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	margin-left: 38%;
+}
+
+.klaipeda-city a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+    margin-left: auto;
+}
+
+.anyksciai {
+	width: 90%;
+	height: 300px;
+	background-image: url('http://i2.alfi.lt/30211/89/91.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+}
+
+.anyksciai-city {
+	position: absolute;
+	width: 90%;
+	height: 300px;
+	margin-left: -70px;
+}
+
+.anyksciai-city a:link {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	margin-left: 38%;
+}
+
+.anyksciai-city a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+    margin-left: auto;
+}
+
+.druskininkai {
+	width: 90%;
+	height: 300px;
+	background-image: url('http://www.medlt.com/files/media_images/Druskininkai/snow_arena.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+}
+
+.druskininkai-city {
+	position: absolute;
+	width: 90%;
+	height: 300px;
+	margin-left: -150px;
+}
+
+.druskininkai-city a:link {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	margin-left: 38%;
+}
+
+.druskininkai-city a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+    margin-left: auto;
+}
+
+.palanga {
+	width: 90%;
+	height: 300px;
+	background-image: url('https://www.sas.no/upload/destinations/930x300/sas-palanga_003.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+}
+
+.palanga-city {
+	position: absolute;
+	width: 90%;
+	height: 300px;
+	margin-left: -60px;
+}
+
+.palanga-city a:link {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	margin-left: 38%;
+}
+
+.palanga-city a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+    margin-left: auto;
+}
+
+.birstonas {
+	width: 90%;
+	height: 300px;
+	background-image: url('https://ukmin.lrv.lt/uploads/ukmin/documents/images/Turizmas/birstonas3.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+}
+
+.birstonas-city {
+	position: absolute;
+	width: 90%;
+	height: 300px;
+	margin-left: -100px;
+}
+
+.birstonas-city a:link {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	margin-left: 38%;
+}
+
+.birstonas-city a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+    margin-left: auto;
+}
+
+.nida {
+	width: 90%;
+	height: 300px;
+	background-image: url('http://about-eastern-europe.com/wp-content/uploads/2016/05/Nida-Lithuania-www.dronestagr.am_.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+
+.nida-city {
+	position: absolute;
+	width: 90%;
+	height: 300px;
+}
+
+.nida-city a:link {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+	margin-left: 38%;
+}
+
+.nida-city a:visited {
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 1.3;
+	letter-spacing: 3px;
+    margin-left: auto;
+}
+
+.other-cities {
+	position: relative;
+	color: #333;
+	font-size: 30px;
+	text-align: center;
+	font-family: sans-serif;
+}
+ #footer {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	background-image: url('https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#footer p {
+	position: relative;
+	color: white;
+	text-align: center;
+}
+
+#copyright {
+	position: relative;
+	bottom: -250px;
+}
+#travel {
+	top: 80px;
+	font-size: 21px;
+	font-weight: 700;
+}
+
+#study {
+	top: 35px;
+	font-size: 20px;
+}
+
+.footer-social-icons {
+	width: 450px;
+	display: block;
+	margin: 0 auto;
+}
+
+.social-icon {
+	position: relative;
+	color: #fff;
+	font-size: 25px;
+}
+
+.social-icon li {
+	vertical-align: top;
+	display: inline;
+	height: 100px;
+}
+
+.social-icon a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-social-icons {
+	position: relative;
+	list-style-type: none;
+	top: 70px;
+}
+
+.ion-social-twitter {
+	padding: 10px 14px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+
+.ion-social-twitter:hover {
+	background-color: #322f30;
+}
+
+.ion-social-facebook {
+	padding: 10px 14px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+
+.ion-social-facebook:hover {
+	background-color: #322f30;
+}
+
+.ion-social-instagram-outline {
+	padding: 10px 14px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+
+.ion-social-instagram-outline:hover {
+	background-color: #322f30;
+}
+
+
+.ion-social-googleplus {
+	padding: 10px 14px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+
+.ion-social-googleplus:hover {
+	background-color: #322f30;
+}
+
+.ion-social-pinterest {
+	padding: 10px 14px;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+
+.ion-social-pinterest:hover {
+	background-color: #322f30;
+}

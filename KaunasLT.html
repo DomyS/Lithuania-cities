@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+     <head>
+         <title>Cities of Lithuania</title>
+         <link rel="stylesheet" type="text/css" href="LT.css" />
+		 <link rel="stylesheet" type="text/css" href="kaunas.css" />
+         <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	 </head>
+<body>
+<header>
+    <nav class="clearfix">
+	    <a href="index.html" class="logo">Lietuvos miestai</a>
+		<a href="javascript:void(0)"></a>
+	</nav>
+</header>
+<div class="kaunas-div">
+     <h1>Kaunas</h1>
+     <p>Antrasis pagal dydį Lietuvos miestas šalies centrinėje dalyje, Nemuno<br> ir Neries santakoje. Svarbus pramonės, transporto, mokslo ir kultūros<br> centras, Laikinoji sostinė. Kauno miesto savivaldybės, Kauno rajono<br> savivaldybės, arkivyskupijos centras.</p>
+        <div id="images">
+		     <ul>
+				 <li><a href="Kaunas1.jpg" rel="group" class="fancybox"><img src="Kaunas1.jpg" /></a></li>
+				 <li><a href="Kaunas2.jpg" rel="group" class="fancybox"><img src="Kaunas2.jpg" /></a></li>
+				 <li><a href="Kaunas3.jpg" rel="group" class="fancybox"><img src="Kaunas3.jpg" /></a></li>
+				 
+			 </ul>
+		 </div>
+</div>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 54.898521, lng: 23.903597};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQJNqlilinpPS5O9vS_dxowj8Ucbqvdpw&callback=initMap">
+    </script>
+
+	<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+     <head>
+         <title>Cities of Lithuania</title>
+         <link rel="stylesheet" type="text/css" href="LT.css" />
+		 <link rel="stylesheet" type="text/css" href="vilnius.css" />
+         <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+		
+	 </head>
+<body>
+<header>
+    <nav class="clearfix">
+	    <a href="index.html" class="logo">Cities of Lithuania</a>
+		<a href="javascript:void(0)"></a>
+	</nav>
+</header>
+<div class="vilnius-map">
+     <div class="vilnius-div">
+         <h1>Vilnius</h1>
+		 <p>Vilnius, Lithuania’s capital, is known for its baroque<br> architecture, seen especially in its medieval Old Town. But the<br> buildings lining this district’s partially cobblestoned streets<br> reflect diverse styles and eras, from the neoclassical Vilnius<br> Cathedral to Gothic St. Anne's Church.</p>
+         <div id="images">
+		     <ul>
+				 <li><a href="vilnius2.jpg" rel="group" class="fancybox"><img src="vilnius2.jpg" /></a></li>
+				 <li><a href="vilnius3.jpg" rel="group" class="fancybox"><img src="vilnius3.jpg" /></a></li>
+				 <li><a href="vilnius4.jpg" rel="group" class="fancybox"><img src="vilnius4.jpg" /></a></li>
+				 
+			 </ul>
+		 </div>
+	 </div>
+</div>
+  <body>
+    <div id="map">
+    <script>
+      function initMap() {
+        var uluru = {lat: 54.687157, lng: 25.279652};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQJNqlilinpPS5O9vS_dxowj8Ucbqvdpw&callback=initMap">
+    </script>
+	</div>
+</div>
+ 
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+ 
+</body>
+</html>
